@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1920</width>
-    <height>1080</height>
+    <width>1400</width>
+    <height>800</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,8 +20,8 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>420</x>
-      <y>-10</y>
+      <x>370</x>
+      <y>-80</y>
       <width>1521</width>
       <height>1041</height>
      </rect>
@@ -30,15 +30,15 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>Pictures/mainwindow.png</pixmap>
+     <pixmap>Pictures/main-wooman.png</pixmap>
     </property>
    </widget>
    <widget class="Line" name="line">
     <property name="geometry">
      <rect>
-      <x>720</x>
+      <x>620</x>
       <y>-10</y>
-      <width>41</width>
+      <width>16</width>
       <height>1161</height>
      </rect>
     </property>
@@ -58,7 +58,7 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>180</x>
+      <x>130</x>
       <y>200</y>
       <width>371</width>
       <height>81</height>
@@ -88,8 +88,8 @@ border-radius: 30;
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>310</y>
+      <x>130</x>
+      <y>300</y>
       <width>371</width>
       <height>81</height>
      </rect>
@@ -118,7 +118,7 @@ border-radius: 30;
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>110</x>
       <y>80</y>
       <width>411</width>
       <height>71</height>
