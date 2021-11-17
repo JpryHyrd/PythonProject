@@ -71,6 +71,7 @@ class Ui_MainWindow(object):
         self.label_2.setObjectName("label_2")
         MainWindow.setCentralWidget(self.centralwidget)
         self.pushButton.setText("Вход")
+        self.label_2.setText("Money Keeper")
         self.pushButton_2.setText("Регистрация")
         self.pushButton.clicked.connect(self.login)
         self.pushButton_2.clicked.connect(self.registration)
