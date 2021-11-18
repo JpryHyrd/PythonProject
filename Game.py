@@ -158,6 +158,7 @@ class Ui_MainWindow(object):
 "}\n"
 "")
         self.pushButton.setObjectName("pushButton")
+        self.pushButton.clicked.connect(self.homepage)
         self.label_4.raise_()
         self.lineEdit.raise_()
         self.label.raise_()
@@ -260,6 +261,7 @@ class Ui_MainWindow(object):
 "}\n"
 "")
         self.pushButton.setObjectName("pushButton")
+        self.pushButton.clicked.connect(self.homepage)
         self.label_4.raise_()
         self.label_3.raise_()
         self.label.raise_()
@@ -274,6 +276,131 @@ class Ui_MainWindow(object):
         self.label_2.setText("PASSWORD")
         self.label_5.setText("REPEAT PASSWORD")
         self.pushButton.setText("Sign up")
+        MainWindow.setCentralWidget(self.centralwidget)
+    def homepage(self):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(1400, 800)
+        MainWindow.setStyleSheet("background-color: None;")
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setStyleSheet("background-color: #312e2d;")
+        self.centralwidget.setObjectName("centralwidget")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(80, 240, 291, 291))
+        self.label.setText("")
+        self.label.setPixmap(QtGui.QPixmap("Pictures/assets.png"))
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(400, 240, 291, 291))
+        self.label_2.setText("")
+        self.label_2.setPixmap(QtGui.QPixmap("Pictures/liabilities.png"))
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(1040, 240, 291, 291))
+        self.label_3.setText("")
+        self.label_3.setPixmap(QtGui.QPixmap("Pictures/reports.png"))
+        self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(self.centralwidget)
+        self.label_4.setGeometry(QtCore.QRect(720, 240, 291, 291))
+        self.label_4.setText("")
+        self.label_4.setPixmap(QtGui.QPixmap("Pictures/redaction.png"))
+        self.label_4.setObjectName("label_4")
+        self.label_5 = QtWidgets.QLabel(self.centralwidget)
+        self.label_5.setGeometry(QtCore.QRect(450, 540, 201, 51))
+        font = QtGui.QFont()
+        font.setPointSize(37)
+        self.label_5.setFont(font)
+        self.label_5.setStyleSheet("color: #f1dbce;")
+        self.label_5.setObjectName("label_5")
+        self.label_6 = QtWidgets.QLabel(self.centralwidget)
+        self.label_6.setGeometry(QtCore.QRect(160, 540, 141, 51))
+        font = QtGui.QFont()
+        font.setPointSize(37)
+        self.label_6.setFont(font)
+        self.label_6.setStyleSheet("color: #f1dbce;")
+        self.label_6.setObjectName("label_6")
+        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton.setGeometry(QtCore.QRect(80, 250, 281, 271))
+        self.pushButton.setStyleSheet("QPushButton {\n"
+"background-color: Transparent;\n"
+"background-repeat:no-repeat;\n"
+"border: 3px;\n"
+"border-radius:40;\n"
+"}\n"
+"QPushButton:hover {\n"
+"background: rgba(83, 80, 79, 0.4);\n"
+"}\n"
+"")
+        self.pushButton.setText("")
+        self.pushButton.setObjectName("pushButton")
+        self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_2.setGeometry(QtCore.QRect(400, 250, 281, 271))
+        self.pushButton_2.setStyleSheet("QPushButton {\n"
+"background-color: Transparent;\n"
+"background-repeat:no-repeat;\n"
+"border: 3px;\n"
+"border-radius:40;\n"
+"}\n"
+"QPushButton:hover {\n"
+"background: rgba(83, 80, 79, 0.4);\n"
+"}\n"
+"")
+        self.pushButton_2.setText("")
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.pushButton_3 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_3.setGeometry(QtCore.QRect(720, 250, 281, 271))
+        self.pushButton_3.setStyleSheet("QPushButton {\n"
+"background-color: Transparent;\n"
+"background-repeat:no-repeat;\n"
+"border: 3px;\n"
+"border-radius:40;\n"
+"}\n"
+"QPushButton:hover {\n"
+"background: rgba(83, 80, 79, 0.4);\n"
+"}\n"
+"")
+        self.pushButton_3.setText("")
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.pushButton_4 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_4.setGeometry(QtCore.QRect(1040, 250, 281, 271))
+        self.pushButton_4.setStyleSheet("QPushButton {\n"
+"background-color: Transparent;\n"
+"background-repeat:no-repeat;\n"
+"border: 3px;\n"
+"border-radius:40;\n"
+"}\n"
+"QPushButton:hover {\n"
+"background: rgba(83, 80, 79, 0.4);\n"
+"}\n"
+"")
+        self.pushButton_4.setText("")
+        self.pushButton_4.setObjectName("pushButton_4")
+        self.label_7 = QtWidgets.QLabel(self.centralwidget)
+        self.label_7.setGeometry(QtCore.QRect(1110, 540, 181, 51))
+        font = QtGui.QFont()
+        font.setPointSize(37)
+        self.label_7.setFont(font)
+        self.label_7.setStyleSheet("color: #f1dbce;")
+        self.label_7.setObjectName("label_7")
+        self.label_8 = QtWidgets.QLabel(self.centralwidget)
+        self.label_8.setGeometry(QtCore.QRect(750, 540, 221, 51))
+        font = QtGui.QFont()
+        font.setPointSize(37)
+        self.label_8.setFont(font)
+        self.label_8.setStyleSheet("color: #f1dbce;")
+        self.label_8.setObjectName("label_8")
+        self.label_9 = QtWidgets.QLabel(self.centralwidget)
+        self.label_9.setGeometry(QtCore.QRect(70, 100, 401, 91))
+        font = QtGui.QFont()
+        font.setPointSize(55)
+        self.label_9.setFont(font)
+        self.label_9.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_9.setStyleSheet("color: #f1dbce;")
+        self.label_9.setObjectName("label_9")
+        self.label_5.setText("Liabilities")
+        self.label_6.setText("Assets")
+        self.label_7.setText("Reports")
+        self.label_8.setText("Redaction")
+        self.label_9.setText("Home Page")
         MainWindow.setCentralWidget(self.centralwidget)
 
     def retranslateUi(self, MainWindow):
