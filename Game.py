@@ -168,6 +168,8 @@ class Ui_MainWindow(object):
         self.pushButton.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
 
+
+
     def registration(self):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1400, 800)
@@ -277,6 +279,7 @@ class Ui_MainWindow(object):
         self.label_5.setText("REPEAT PASSWORD")
         self.pushButton.setText("Sign up")
         MainWindow.setCentralWidget(self.centralwidget)
+
     def homepage(self):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1400, 800)
