@@ -316,7 +316,7 @@ class Ui_MainWindow(object):
         self.label_11.setText(_translate("MainWindow", "0"))
         self.label_5.setText(_translate("MainWindow", "ЖКХ"))
         self.label_14.setText(_translate("MainWindow", "0"))
-        self.label_2.setText(_translate("MainWindow", "Расходы (Дом,  услуги ЖКХ)"))
+        self.label_2.setText(_translate("MainWindow", "Расходы (Дом,  услуги)"))
         self.label_3.setText(_translate("MainWindow", "Товары для дома"))
         self.label_6.setText(_translate("MainWindow", "Тел./Интернет"))
         self.label_15.setText(_translate("MainWindow", "0"))
