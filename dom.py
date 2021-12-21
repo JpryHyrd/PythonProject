@@ -267,6 +267,11 @@ class Ui_MainWindow(object):
 "border-radius: 30;\n"
 "}")
         self.pushButton_3.setObjectName("pushButton_3")
+        self.pushButton_4 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_4.setGeometry(QtCore.QRect(1280, 90, 71, 61))
+        self.pushButton_4.setStyleSheet("background-color: transparent;")
+        self.pushButton_4.setText("")
+        self.pushButton_4.setObjectName("pushButton_4")
         self.line_8.raise_()
         self.lineEdit_6.raise_()
         self.line_4.raise_()
@@ -301,6 +306,7 @@ class Ui_MainWindow(object):
         self.line.raise_()
         self.line_9.raise_()
         self.pushButton_3.raise_()
+        self.pushButton_4.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -316,7 +322,7 @@ class Ui_MainWindow(object):
         self.label_11.setText(_translate("MainWindow", "0"))
         self.label_5.setText(_translate("MainWindow", "ЖКХ"))
         self.label_14.setText(_translate("MainWindow", "0"))
-        self.label_2.setText(_translate("MainWindow", "Расходы (Дом,  услуги)"))
+        self.label_2.setText(_translate("MainWindow", "Дом/Услуги ЖКХ"))
         self.label_3.setText(_translate("MainWindow", "Товары для дома"))
         self.label_6.setText(_translate("MainWindow", "Тел./Интернет"))
         self.label_15.setText(_translate("MainWindow", "0"))

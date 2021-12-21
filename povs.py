@@ -267,6 +267,11 @@ class Ui_MainWindow(object):
 "border-radius: 30;\n"
 "}")
         self.pushButton_3.setObjectName("pushButton_3")
+        self.pushButton_4 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_4.setGeometry(QtCore.QRect(1280, 50, 71, 61))
+        self.pushButton_4.setStyleSheet("background-color: transparent;")
+        self.pushButton_4.setText("")
+        self.pushButton_4.setObjectName("pushButton_4")
         self.label_4.raise_()
         self.label.raise_()
         self.label_6.raise_()
@@ -301,6 +306,7 @@ class Ui_MainWindow(object):
         self.line_9.raise_()
         self.line.raise_()
         self.pushButton_3.raise_()
+        self.pushButton_4.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)

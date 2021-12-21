@@ -737,6 +737,22 @@ border-radius: 30;
      <string>Сохранить</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>1280</x>
+      <y>90</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: transparent;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
    <zorder>line_8</zorder>
    <zorder>lineEdit_6</zorder>
    <zorder>line_4</zorder>
@@ -771,6 +787,7 @@ border-radius: 30;
    <zorder>line</zorder>
    <zorder>line_9</zorder>
    <zorder>pushButton_3</zorder>
+   <zorder>pushButton_4</zorder>
   </widget>
  </widget>
  <resources/>
