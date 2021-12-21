@@ -1,4 +1,9 @@
 {
+  "logpass": {
+    "admin": "admin",
+    "Artur": "kaz",
+    "Genry": "lor"
+  },
   "login": "admin",
   "password": "addpass",
   "assets": [
@@ -65,7 +70,7 @@
   ],
   "zam": [
     1311,
-    96,
+    98,
     98,
     102,
     105,

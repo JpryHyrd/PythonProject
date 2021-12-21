@@ -162,7 +162,7 @@ class Ui_MainWindow(object):
 "}\n"
 "")
         self.pushButton.setObjectName("pushButton")
-        self.pushButton.clicked.connect(self.homepage)
+        self.pushButton.clicked.connect(self.login_connect)
         self.label_4.raise_()
         self.lineEdit.raise_()
         self.label.raise_()
@@ -172,6 +172,11 @@ class Ui_MainWindow(object):
         self.pushButton.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
 
+    def login_connect(self):
+            if self.lineEdit.text() in  self.data_json["logpass"]:
+                if self.data_json["logpass"][self.lineEdit.text()] == self.lineEdit_2.text():
+                    self.homepage()
+                    print(len(self.data_json["logpass"]))
 
 
     def registration(self):
@@ -267,7 +272,7 @@ class Ui_MainWindow(object):
 "}\n"
 "")
         self.pushButton.setObjectName("pushButton")
-        self.pushButton.clicked.connect(self.homepage)
+        self.pushButton.clicked.connect(self.registrarion_con)
         self.label_4.raise_()
         self.label_3.raise_()
         self.label.raise_()
@@ -283,6 +288,12 @@ class Ui_MainWindow(object):
         self.label_5.setText("REPEAT PASSWORD")
         self.pushButton.setText("Sign up")
         MainWindow.setCentralWidget(self.centralwidget)
+    def registrarion_con(self):
+            if self.lineEdit_2.text() == self.lineEdit_3.text() and self.lineEdit_2.text() != "" and self.lineEdit.text() != "":
+                self.data_json['logpass'].update({self.lineEdit.text(): self.lineEdit_2.text()})
+                with open('data.json', 'w') as m:
+                        m.write(json.dumps(self.data_json, indent=2))
+                self.homepage()
 
     def homepage(self):
         MainWindow.setObjectName("MainWindow")
